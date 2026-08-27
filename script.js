@@ -428,6 +428,8 @@ if (operador === "+") {
 //2. Maior entre três números
 //Solicite três números diferentes ao usuário e informe qual deles é o maior.
 
+/*
+
 let numero1 = Number(prompt("Digite o primeiro numero"))
 let numero2 = Number(prompt("Digite o segundo numero"))
 let numero3 = Number(prompt("Digite o terceiro numero"))
@@ -441,42 +443,101 @@ if (numero1 >= numero2 && numero1 >= numero3 ) {
     " O numero " + numero3 + " e o maior "
 }
 
+*/
+
+
+
+//3. Desconto em compras
+//Uma loja oferece 10% de desconto para compras acima de R$ 100,00.
+//Solicite o valor da compra e informe o valor final que deverá ser pago.
+//Caso a compra não atinja esse valor, informe o preço sem desconto.
+
+const valorCompra = Number(prompt("Valor total da compra :"))
+
+if (valorCompra > 100) {
+    const desconto = valorCompra * 0.10 
+    const valorFinal = valorCompra - desconto
+    alert("Desconto aplicado! Valor final de R$ : " + valorFinal.toFixed(2))
+} else {
+    alert("valor normal : R$ " valorCompra.toFixed)
+}
+
+
+
+//4. Sistema de login
+//Crie um programa que solicite um nome de usuário e uma senha.
+//Considere que:
+//Usuário: admin 
+//Senha: 1234 
+//Caso ambos estejam corretos, exiba a mensagem "Login bem-sucedido". Caso contrário, exiba "Acesso negado".
+
+/*
+const usuario = prompt("Usuario")
+const senha = prompt("senha")
+
+if ( usuario === "admin" && senha == "1234") {
+    alert("Login bem-sucedido")
+} else {
+    alert("Acesso Negado")
+}
+*/
+
+
+
+/* ------------------------------------  */
+
+
+// Nível Avancado
+
+
+/* ------------------------------------  */
+
+
+
+//1. Classificação de triângulos
+//Solicite ao usuário os comprimentos dos três lados de um possível triângulo.
+//Primeiro, verifique se os valores realmente podem formar um triângulo.
+//Caso possam, classifique-o como:
+//Equilátero (todos os lados iguais); 
+//Isósceles (dois lados iguais); 
+//Escaleno (todos os lados diferentes). 
+//Caso não seja possível formar um triângulo, informe isso ao usuário.
 
 
 
 
 
+//2. Conversão de notas (Conceitos)
+//Solicite uma nota entre 0 e 100 e converta-a para um conceito conforme a tabela abaixo:
+//A: 90 a 100 
+//B: 80 a 89 
+//C: 70 a 79 
+//D: 60 a 69 
+//F: abaixo de 60 
+//Exiba o conceito correspondente.
 
 
 
 
 
+//3. Cálculo de IMC
+//Solicite o peso (em quilogramas) e a altura (em metros) de uma pessoa.
+//Calcule o Índice de Massa Corporal (IMC) e informe sua classificação:
+//Abaixo do peso 
+//Peso normal 
+//Sobrepeso 
+//Obesidade 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//4. Ano Bissexto
+//Solicite ao usuário um ano e informe se ele é bissexto ou não bissexto.
+//Considere as seguintes regras:
+//Um ano é bissexto se for divisível por 400; ou 
+//Se for divisível por 4 e não for divisível por 100. 
+//Caso contrário, o ano não é bissexto.
 
 
 
