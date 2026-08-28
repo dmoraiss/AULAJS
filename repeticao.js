@@ -118,6 +118,10 @@ console.log("A soma dos numeros chegou em: " + soma)
 
 */
 
+
+
+
+/*
 // ADIVINHE O NUMERO 
 
 // 1 a 100
@@ -152,3 +156,113 @@ do {
     }
         
 } while (condition);
+
+*/
+
+
+
+
+/*  
+
+
+// FOR -> LOOP
+
+// let conta = 0; Variavel de controle.
+//conta < 10 - analise de condicao
+// conta ++
+
+for (let conta = 0; conta < 10; conta++) {
+    console.log(conta)
+    
+}
+
+console.log("o loop  terminou")
+*/
+
+
+/*
+
+//TABUADA
+const numero = Number(prompt("Tabuada de qual numero"))
+
+if (Number.isNaN(numero)) {
+    console.log("numero invalido")
+} else {
+    //console.log("TABUADA DO " + numero )
+    console.log(`\n TABUADA DO ${numero} \n`)
+
+    for ( let i = 1; i<=10; i++)
+
+    const resultado = numero * i 
+}
+    console.log (` ${numero} x ${i} = ${resultado}`)
+
+*/
+
+
+
+
+/*
+// Exiba numeros pares de 0 a 20
+console.log("numero pares de 0 a 20 : \n")
+
+// pares = pares =2
+
+//pares += 2 
+for(let pares = 0; pares <= 20; pares += 2 )
+    console.log("pares")
+
+*/
+
+
+
+
+/*
+
+//CONTAGEM REGRESSIVA COM FOR
+
+console.log("Lancamento em :  \n ")
+
+//conta --
+//conta = conta - 1
+
+for (let conta = 10; conta >= 1 ; conta--) {
+    console.log( conta + "...")
+}
+console.log("decolar!")
+*/
+
+
+
+
+/*
+
+// ATIVIDADE
+
+for (let numero = 1;  numero <=  3 ; numero++) {
+    
+    for (let repeticao = 1; repeticao <= 3; repeticao++) {
+        
+        console.log(numero)
+    }
+
+}
+
+*/
+
+
+/*
+let linha = 5
+
+for( let number = 1; number <= linha; number++){
+
+    let resultado = "";
+
+    for(let linhas = 1; linha <= number ; linhas++){
+
+        resultado += "* "
+    }
+
+    console.log(resultado)
+}
+*/
