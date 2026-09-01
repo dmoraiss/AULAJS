@@ -266,3 +266,6 @@ for( let number = 1; number <= linha; number++){
     console.log(resultado)
 }
 */
+
+
+

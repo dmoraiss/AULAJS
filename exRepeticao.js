@@ -5,14 +5,14 @@
 /* Crie um programa que exiba todos os números de 1 até 10, um por linha. */
 
 
-
+/*
 for (let conta = 1 ; conta < 11; conta++) {
     console.log(conta)
     
 }
 
 console.log("o loop  terminou")
-
+*/
 
 
 // 2. Tabuada de um número
@@ -26,25 +26,30 @@ Exemplo para o número 5:
 */
 
 
-const numero = Number(prompt("Tabuada de qual numero"))
+/*
+const numero = Number(prompt("Digite um numero : "))
 
 if (Number.isNaN(numero)) {
-    console.log("numero invalido")
-} 
-else {
-    //console.log("TABUADA DO " + numero )
-    console.log(`\n TABUADA DO ${numero} \n`)
 
-    for ( let i = 1; i <= 10; i++);
+    console.log("Digite apenas numeros")
 
-    const resultado = numero * i ;
+} else {
+
+    console.log(`\n tabuada do ${numero} : `)
+
+    for( let i = 1 ; i <=10 ; i++){
+    
+     const resultado = numero * i 
+
+     console.log(` ${numero} X ${i} = ${resultado}`)
+    }
+
 }
-
-console.log (` ${numero} x ${i} = ${resultado}`)
+*/
 
 
 // 3. Soma dos primeiros N números
-/* 
+ /*
 Solicite um número inteiro positivo ao usuário e calcule a soma de todos os números de 1 até esse valor.
 Exemplo:
 Entrada: 5 
@@ -53,7 +58,15 @@ Saída: 15
 */
 
 
+/*
+const n = Number(prompt("Digite um numero inteiro possitivo :"))
+let soma = 0;
 
+for (let i=1 ; i<=n ; i++) {
+    soma += i ; 
+}
+console.log(soma);
+*/
 
 
 /* ----- Nível Intermediário ----- */
@@ -63,8 +76,11 @@ Saída: 15
 /* Exiba todos os números pares entre 1 e 50, um por linha. */
 
 
-
-
+/*
+for (let i = 2 ; i<=50 ; i += 2) {
+    console.log(i)
+}
+*/
 
 
 // 5. Jogo de adivinhação
@@ -77,10 +93,43 @@ Se o palpite for menor que o número secreto, informe que o número é maior.
 Quando acertar, exiba uma mensagem de parabéns e encerre o programa.
 */
 
+/*
+const numeroSecreto = Math.floor(Math.random() *100) +1;
 
+let palpites;
+let tentativas = 0 ;
 
+console.log("Acerta o numeor ai")
 
+do {
+    palpites = Number(prompt("Seu palpite"))
 
+    tentativas++
+
+    if (Number.isNaN(palpites)) {
+
+        console.log("tenta de novo")
+
+    } else if (palpites === numeroSecreto ){
+
+        alert("Acertou em " + tentativas + " teativas")
+
+    } else if (palpites < numeroSecreto) {
+
+        alert ("muito baixo")
+
+    } else if (palpites > numeroSecreto) {
+
+        alert ("muio alto ")
+
+    } else {
+        
+    }
+        
+    
+
+} while (palpites != numeroSecreto);
+*/
 
 // 6. Contagem regressiva
 /* 
@@ -98,8 +147,19 @@ Saída:
 */
 
 
+/*
+let tempo = Number(prompt("Informe um numero"))
 
+while (tempo > 0) {
 
+    console.log(tempo);
+    
+    tempo--
+
+}
+
+console.log("Fim");
+*/
 
 
 /* ----- Nível Avançado ----- */
@@ -115,7 +175,19 @@ Saída: 10
 */
 
 
+/*
+let numero = Number(prompt("Digite um numero interio possitivo"))
 
+let soma = 0 ;
+
+while (numeor > 0) {
+    
+    soma += numero % 10;
+    numero = Math.floor(numeor / 10);
+}
+
+console.log(soma);
+*/
 
 
 // 8. Fatorial
@@ -130,7 +202,16 @@ Ao final, exiba o resultado do cálculo.
 */
 
 
+/*
+let num = Number(prompt("Digite um Numero "))
+let mult = 1 
 
+for (i=num ; i >= 1 ; i--) {
+    
+    console.log(mult *= i);
+    
+}
+*/
 
 
 // 9. Inverter número
@@ -142,7 +223,35 @@ Saída: 54321
 */
 
 
+/*
+for (let i = 0; 1 <= 5 ; i++) {
+    
+    const number = prompt("Digite um numero interio possitivo")
+    const reversednumber = number.split (``).reverse(``).join(``)
 
+    alert(`O numero ${number} invertido e ${reversednumber}`);
+    
+}
+*/
+
+
+/*
+let num = Number(prompt("Digite um Numero "))
+
+let invertido = 0 
+
+while (numero > 0 ) {
+    
+    let digito = numero % 10
+
+    invertido = invertido * 10 + digito 
+
+    numero = Math.floor (numero / 10 )
+
+}
+
+console.log("Numero Invertido " + invertido);
+*/
 
 
 //10. Números perfeitos até 1000
@@ -154,6 +263,24 @@ Divisores de 6: 1, 2 e 3
 Crie um programa que encontre e exiba todos os números perfeitos entre 1 e 1000.
 */
 
+/*
+for ( let numero = 1 ; numero <= 1000 ; numero++ ) {
 
+    let soma = 0 
 
+    for (let divisor = 1 ; divisor < numero ; divisor++ ) {
+        
+        if (numero % divisor === 0 ) {
+            
+            soma += divisor ;
+        } 
+    }
+
+    if (soma === numero ) {
+
+        console.log(numero);
+        
+    }
+}
+*/
 
